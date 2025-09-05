@@ -39,29 +39,18 @@
         {% include blog/post_nav.liquid %}
     {% endif %}
 
-    <!-- Giscus -->
-    {% if site.data.comments.giscus.repo and site.data.comments.giscus.repo-id and site.data.comments.giscus.category-id and site.data.comments.giscus.mapping %}
-        {% include social/giscus.liquid %}
-    {% endif %}
-
     <!--Utterances-->
-    {% if site.data.comments.utterances.repo and site.data.comments.utterances.issue-term %}
-        {% include social/utterances.liquid %}
-    {% elsif site.comments.utterances.repo and site.comments.utterances.issue-term %}
+    {% if site.comments.utterances.repo and site.comments.utterances.issue-term %}
         {% include social/utterances.liquid %}
     {% endif %}
 
     <!-- Cusdis -->
-    {% if site.data.comments.cusdis.app_id %}
-        {% include social/cusdis.liquid %}
-    {% elsif site.comments.cusdis_app_id or site.cusdis_app_id %}
+    {% if site.comments.cusdis_app_id or site.cusdis_app_id %}
         {% include social/cusdis.liquid %}
     {% endif %}
 
     <!-- Disqus -->
-    {% if site.data.comments.disqus.shortname %}
-        {% include social/disqus.liquid %}
-    {% elsif site.comments.disqus_shortname or site.theme_settings.disqus_shortname or site.disqus_shortname %}
+    {% if site.comments.disqus_shortname or site.theme_settings.disqus_shortname or site.disqus_shortname %}
         {% include social/disqus.liquid %}
     {% endif %}
 {% endcapture %}

@@ -42,24 +42,34 @@
 }
 
 // sets a specific icon family to use alongside style + icon mixins
-@mixin fa-family-classic() {
-  @extend .fa-classic;
-}
 
 // convenience mixins for declaring pseudo-elements by CSS variable,
-// including all style-specific font properties
+// including all style-specific font properties, and both the ::before
+// and ::after elements in the duotone case.
 @mixin fa-icon-solid($fa-var) {
+  @extend %fa-icon;
   @extend .fa-solid;
 
-  & { #{$fa-icon-property}: unquote("\"#{ $fa-var }\""); #{$fa-duotone-icon-property}: unquote("\"#{ $fa-var }#{ $fa-var }\""); }
+  &::before {
+    content: unquote("\"#{ $fa-var }\"");
+  }
 }
+
 @mixin fa-icon-regular($fa-var) {
+  @extend %fa-icon;
   @extend .fa-regular;
 
-  & { #{$fa-icon-property}: unquote("\"#{ $fa-var }\""); #{$fa-duotone-icon-property}: unquote("\"#{ $fa-var }#{ $fa-var }\""); }
+  &::before {
+    content: unquote("\"#{ $fa-var }\"");
+  }
 }
+
 @mixin fa-icon-brands($fa-var) {
+  @extend %fa-icon;
   @extend .fa-brands;
 
-  & { #{$fa-icon-property}: unquote("\"#{ $fa-var }\""); #{$fa-duotone-icon-property}: unquote("\"#{ $fa-var }#{ $fa-var }\""); }
+  &::before {
+    content: unquote("\"#{ $fa-var }\"");
+  }
 }
+

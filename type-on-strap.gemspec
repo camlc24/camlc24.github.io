@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "type-on-strap"
-  spec.version       = "2.4.12"
+  spec.version       = "2.4.8"
   spec.authors       = ["Sylhare", "Rohan Chandra"]
   spec.email         = ["sylhare@outlook.com", "hellorohan@outlook.com"]
 
@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
                                Thanks for using Type on strap v2+!
                                MSG
 
-  spec.required_ruby_version   = ">= 2.7.2", "< 4.0"
+  spec.required_ruby_version   = ">= 2.7.4", "< 4.0"
 
   spec.add_runtime_dependency "jekyll", ">= 3.8", "< 5.0"
   spec.add_runtime_dependency "jekyll-feed", ">= 0.15.1", "<= 0.17"

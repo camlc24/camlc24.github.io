@@ -6,19 +6,14 @@
 {% assign column = 100.0 | divided_by: include.column %}
 {% endif %}
 
-
-<figure class="row">
+<div class="row">
     {% for image in images %}
-    <div class="column">
-        <img {% if images.size== 1 %}class="single" {% endif %}
+    <div {% if column %} style="flex: {{ column }}%" {% else %} class="column" {% endif %}  >
+        <img {% if images.size == 1 %}class="single"{% endif %}
              src="{{ image | prepend: 'assets/img/' | relative_url }}"
              alt="{{ image | prepend: '/' | split: '/' | last }}">
     </div>
     {% endfor %}
-    {% if include.caption %}
-    {% endif %}
-    <figcaption class="caption-style">{{ include.caption }}</figcaption>
-</figure>
-
+</div>
 
 {% assign column = false %}

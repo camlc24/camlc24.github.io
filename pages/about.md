@@ -1,14 +1,34 @@
 ---
 layout: page
 title: About
-permalink: /about/
-feature-img: "assets/img/pexels/travel.jpeg"
-tags: [Page]
+feature-img: "assets/img/header/tab_back.png"
+position: 1
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+### The CAMLC24 micro-credential
+<p align="justify">
 
-Head over to the [theme's documentation](https://github.com/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+The "Cheminformatics, Automation and Machine Learning in Chemistry: from fundamental concepts to emerging techniques" (or CAMLC for short) micro-credential aims to introduce attendees to the use and development of emerging digital technologies in chemistry. Initially, attendees will review various functions of Python, particularly those related to modules commonly used in cheminformatics. Once users are familiar with Python environments and Jupyter Notebooks, machine learning will be introduced, with a focus on state-of-the-art implementations in the field of chemistry. It is particularly relevant for attendees who work with the following:</p>
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
- 
+* Gaussian and ORCA calculations<br>
+* Machine learning modeling<br>
+* Database generation<br>
+* Quantum mechanics and machine learning automated workflows<br>
+* Applications to mechanistic modeling, catalyst design and material discovery<br>
+
+<br>
+
+### Requirements
+
+* Basic level of computational chemistry. Preferably, applicants should be familiar with using Gaussian or ORCA and running jobs with bash or SLURM scripts
+* Good command of English (language of the micro-credential)
+* Participants must bring their own laptops to follow the micro-credential
+* Sessions are in-person only
+
+<br>
+
+### Recommended skills
+
+* Basic level of Python or other computing languages
+
+<br>

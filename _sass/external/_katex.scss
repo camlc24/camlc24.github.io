@@ -1,20 +1,16 @@
 /*!
- * KaTeX v0.16.11
- * Plus added customizations for the theme
+ * KaTeX v0.16.9
+ * Plus added customizations for the theme and font path
  */
-
-@import "katex/katex";
-
+$katex-font-path: "../../assets/fonts/katex" !default;
 .katex-display {
   @media screen and (max-width: $sm-break) {
     overflow-x: auto;
   }
-  & {
-    padding-bottom: 3px;
-    padding-top: 1px;
-    width: auto;
-    height: auto;
-  }
+  padding-bottom: 3px;
+  padding-top: 1px;
+  width: auto;
+  height: auto;
 }
 
 .math-display {
@@ -22,4 +18,4 @@
   width: 100%;
 }
 
-
+@import "katex/katex";

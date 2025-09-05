@@ -13,7 +13,6 @@ categories:
     labels:
       - 'devops'
       - 'custom'
-      - 'dependencies'
 template: |
   ## What’s new:
 

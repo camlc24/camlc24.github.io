@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
 
     {% if page.bootstrap %}
     <!-- Bootstrap-4.1.3 isolation CSS -->
@@ -35,15 +35,18 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     {% endif %}
 
-    <!-- KaTeX 0.16.11 -->
+    <!-- KaTeX 0.16.9 -->
     {% if site.katex or site.theme_settings.katex %}
     <script defer src="{{ '/assets/js/vendor/katex.min.js' | relative_url }}"></script>
     <script defer src="{{ '/assets/js/vendor/katex.auto-render.min.js' | relative_url }}" onload="renderMathInElement(document.body);"></script>
     {% endif %}
 
-    <!-- Mermaid 11.4.1 -->
+    <!-- Mermaid 10.6.1 -->
     {% if site.mermaid %}
-    <script defer src="{{ '/assets/js/vendor/mermaid.min.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/vendor/mermaid.min.js' | relative_url }}" onload="mermaid.initialize({
+      startOnLoad:true,
+      theme: '{{ site.mermaid }}',
+    });"></script>
     {% endif %}
 
     <!-- Simple Jekyll Search 1.10.0 -->
